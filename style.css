@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.navbar-brand img{
+    height:60px;
+    padding-left: 50px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+    
+
+}
+.navbar-nav li a{
+    float:right;
+    text-align: left;
+    font-weight: bold;
+
+}
+#nav-bar ul li a:hover{
+    color: green !important;
+}
+.navbar{
+    background: white;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    color: #555 !important;
+    font-weight: 600px;
+    font-size: 16px;
+}
+/*landing video*/
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+  }
+  /*---About---*/
+  #about{
+    padding-top: 50px;
+    padding-bottom: 50ps;
+    color: white;
+    background: #555;
+  }
+  #about h2{
+    color:orangered;
+  }
+  #about img{
+    border-radius: 39px;
+  }
+  #about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: orangered !important;
+  }
+  .about-content{
+    padding-top: 20px;
+  }
+  /*-----What we Do---*/
+  #services{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(photos/back.jpg);
+    background-size: cover;
+    background-position: center;
+    color:white  !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #services{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+  }
+  #services h1::after{
+    content: '';
+    background: red;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+  }
+  .services{
+    margin-top:40px;
+  }
+  #services .container h1{
+    color: white !important;
+  }
+  .icon  .fa-star{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    color: yellow;
+    
+  }
+  #services a{
+    color: yellow;
+    text-decoration: none;
+  }
+  #services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+  }
+  .services .col-md-3:hover {
+    background-color: green;
+    cursor: pointer;
+    transform: 0.7s;
+    
+    
+  }
+  /*---Services--*/
+  #blog{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+    background-color: lightgray;
+  }
+  
+  h1{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+  }
+  h1::after{
+    content: '' ;
+    background: green;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+  }
+  
+  /*-----Services cards-----*/
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+}
+.card h5{
+  color: navy;
+}
+
+.card a{
+  color:navy;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card i{
+  color: white;
+  background: limegreen;
+}
+.card .fa-solid{
+  color: navy;
+  background: #fff;
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .card-body {
+        text-align: left;
+    }
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+  /*-----shop---*/
+  
+  /*---contact us----*/
+  #contact .col-md-4 .card{
+    background-color: green;
+  }
+  .col-md-6 .card p, h4{
+    color: white;
+  }
+  .col-md-6 .card h4{
+    color: white;
+  }
+  .card input{
+    width: 80%;
+    background: lightgray;
+    text-decoration: none;
+    border: none;
+  }
+  .card button{
+    padding: 7px;
+    background: navy;
+    color: white;
+    border: none;
+    
+  }
+  ::placeholder{
+    color: #999 !important;
+  }
+  .follow{
+    background: white;
+    padding: 10px;
+    margin: 15px;
+  }
+  .contact-info .fa-brands{
+    margin:20px;
+    color: green;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+  }
+  .link-container a {
+    display: block; /* Display links as block-level elements */
+    margin-bottom: 10px; 
+    text-decoration: none;
+    color: black; 
+    font-size: 16px; 
+    
+    
+  }
+  .link-container a :hover{
+    color: green;
+  }
+  /*---footer---*/
+  #footer{
+    background: lightgreen;
+    color: #fff;
+    padding: 12px;
+  }
+  /*-----owl carousels----*/
+  @media (min-width: 992px) {
+    #carousel1 .owl-carousel .item:not(:first-child) {
+      display: none;
+    }
+  }
+  /*---other pages--*/
+  #pages{
+    background: lightgray;
+  }
